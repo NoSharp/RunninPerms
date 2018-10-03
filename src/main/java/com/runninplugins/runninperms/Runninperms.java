@@ -9,7 +9,7 @@ import java.util.UUID;
 public final class Runninperms extends JavaPlugin {
 
     public static JavaPlugin instance = new Runninperms();
-    public static HashMap<UUID, PermissionAttachment> permisssions = new HashMap<UUID, PermissionAttachment>();
+    public static HashMap<UUID, PermissionAttachment> permissions = new HashMap<UUID, PermissionAttachment>();
 
     @Override
     public void onEnable() {
