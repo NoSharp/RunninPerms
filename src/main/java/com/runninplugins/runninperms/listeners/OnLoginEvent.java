@@ -16,7 +16,7 @@ public class OnLoginEvent implements Listener{
         Player player = event.getPlayer();
 
         PermissionAttachment attachment = player.addAttachment(Runninperms.instance);
-        attachment.setPermission("", true);
+        attachment.setPermission("essentials.createkit", true);
 
 
     }

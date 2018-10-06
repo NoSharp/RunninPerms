@@ -1,31 +1,33 @@
 package com.runninplugins.runninperms.types;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 
 public class Group {
 
-    private HashSet<String> permissions = new HashSet<>();
-    private int tier;
+    private List<String> permissions = new ArrayList<>();
+    private String prefix;
 
-    public Group(HashSet<String> permissions, int tier){
+    public Group(List<String> permissions, String prefix){
         this.permissions = permissions;
-        this.tier = tier;
+        this.prefix = prefix;
 
     }
 
-    public int getTier() {
-        return tier;
+    public String getPrefix() {
+        return this.prefix;
     }
 
-    public void setTier(int tier) {
-        this.tier = tier;
+    public void setPrefix(String prefix) {
+        this.prefix = prefix;
     }
 
-    public HashSet<String> getPermissions() {
+    public List<String> getPermissions() {
         return permissions;
     }
 
-    public void setPermissions(HashSet<String> permissions) {
+    public void setPermissions(List<String> permissions) {
         this.permissions = permissions;
     }
 }
